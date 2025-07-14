@@ -304,7 +304,66 @@ header img {
     margin-bottom: 5px;
 }
 
+/****** Activités ***********/
 
+.activites h2 {
+    padding-top: 50px;
+}
+
+.activite {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.activite .activite-card {
+
+    width: 67%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.activite p {
+    font-size: 16px;
+    white-space: nowrap;
+    padding-left: 10px;
+}
+
+.activite img {
+    width: 300px;
+    height: 380px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+
+/****** Footer ***********/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+footer ul {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+footer ul li {
+    font-size: 16px;
+}
+
+footer ul li b {
+    font-size: 18px;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
