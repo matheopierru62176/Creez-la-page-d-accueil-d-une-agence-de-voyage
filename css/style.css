@@ -5,8 +5,7 @@
 
 :root {
     --main-color: #0065FC;
-    --main-bg-color: #F2F2F2;
-    --filter-bg-color: #DEEBFF;
+    scroll-behavior: smooth;
 }
 
 .fa-solid {
@@ -344,7 +343,7 @@ header img {
 
 footer {
     display: flex;
-    justify-content: space-between;
+    gap: 230px;
 
 }
 
