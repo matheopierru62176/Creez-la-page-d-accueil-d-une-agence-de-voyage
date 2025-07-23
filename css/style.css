@@ -453,23 +453,33 @@ footer ul li b {
     }
 
     .activite {
-        gap: 30px;
-        flex-wrap: wrap;
+        gap: 20px;
+        flex-wrap: nowrap;
+        align-items: stretch;
+    }
+
+    .activite a {
+        flex: 1;
+        display: flex;
     }
 
     .activite .activite-card {
         flex: 1;
-        min-width: 200px;
+        min-width: 150px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
     }
 
     .activite img {
         width: 100%;
-        max-width: 250px;
-        height: 300px;
+        height: 250px;
         object-fit: cover;
     }
 
     footer {
+        width: 90%;
+        margin: 0 auto;
         gap: 100px;
         padding: 0 20px;
         background-color: var(--main-bg-color);
@@ -485,5 +495,210 @@ footer ul li b {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+
+    .main-container {
+        padding: 0 20px;
+    }
+
+    /* Header responsive mobile */
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    header img {
+        margin-bottom: 20px;
+    }
+
+    header ul {
+        width: 100%;
+        justify-content: center;
+        margin-top: 0;
+        border-bottom: 1px solid #F2F2F2;
+    }
+
+    header ul li {
+        flex: 1;
+        text-align: center;
+    }
+
+    header ul a {
+        margin-right: 0;
+        padding: 15px 0;
+        border-bottom: 3px solid transparent;
+        border-top: none;
+        display: block;
+        width: 100%;
+    }
+
+    header ul a:hover {
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+    }
+
+    /* Information section mobile */
+    .information h1 {
+        font-size: 22px;
+    }
+
+    .information p {
+        font-size: 16px;
+    }
+
+    .information form {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+
+    .information form input {
+        padding: 15px;
+        border: 1px solid #F2F2F2;
+        border-radius: 5px;
+        text-align: left;
+    }
+
+    .information form p {
+        border-radius: 5px;
+        margin: 0;
+    }
+
+    .information h2 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding-bottom: 20px;
+    }
+
+    .information button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* Hébergements et Populaires mobile */
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+        gap: 30px;
+        padding-top: 30px;
+    }
+
+    .hebergements {
+        width: 100%;
+        background-color: transparent !important;
+        padding: 0 !important;
+    }
+
+    .hebergements h2 {
+        padding: 0 20px;
+    }
+
+    .hebergement-cards {
+        flex-direction: column;
+        gap: 15px;
+        padding: 0 20px;
+    }
+
+    .hebergement-cards a {
+        flex: none;
+        width: 100%;
+        display: block;
+    }
+
+    .hebergement-cards .card {
+        width: 100%;
+        display: block;
+        height: auto;
+    }
+
+    .hebergement-cards .card-content {
+        padding: 15px;
+        flex-grow: 0;
+    }
+
+    .hebergements .card img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .populaires {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .populaires-cards {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .populaires-cards a {
+        width: 100%;
+        flex: none;
+    }
+
+    .populaires-cards .card {
+        margin-top: 15px;
+    }
+
+    /* Activités mobile */
+    .activites {
+        padding: 0 20px;
+    }
+
+    .activites h2 {
+        padding-top: 30px;
+    }
+
+    .activite {
+        flex-direction: column;
+        gap: 15px;
+        padding-top: 15px;
+        padding-bottom: 30px;
+        align-items: stretch;
+    }
+
+    .activite a {
+        flex: none;
+        display: block;
+        width: 100%;
+    }
+
+    .activite .activite-card {
+        flex: none;
+        min-width: auto;
+        width: 100%;
+        display: block;
+        height: auto;
+    }
+
+    .activite img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .activite p {
+        padding: 15px;
+        white-space: normal;
+    }
+
+    /* Footer mobile */
+    footer {
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+        margin: 0;
+        padding: 30px 20px;
+        background-color: var(--main-bg-color);
+        margin-top: 30px;
+    }
+
+    footer ul {
+        padding-top: 0;
+        width: 100%;
+    }
+
+    footer ul li {
+        margin-bottom: 15px;
+    }
 }
