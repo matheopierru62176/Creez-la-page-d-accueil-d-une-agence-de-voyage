@@ -79,11 +79,21 @@ ul a {
     padding-top: 16px;
     display: block;
     margin-right: 50px;
+    position: relative;
 }
 
 ul a:hover {
     color: #0065FC;
-    border-top: #0065FC 2px solid;
+}
+
+ul a:hover::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background-color: #0065FC;
 }
 
 header img {
@@ -129,6 +139,7 @@ header img {
     border: none;
     font-size: 18px;
     text-align: center;
+    height: 50px;
 }
 
 .information form p {
