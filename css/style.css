@@ -127,19 +127,41 @@ header img {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 20px;
 }
 
-.information form i {
+.information form .search-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px 0 0 15px;
+    border: 1px solid #F2F2F2;
+    border-right: none;
+}
+
+.information form .search-icon i {
     color: black;
-    width: 14px;
+    font-size: 18px;
 }
 
 .information form input {
-    border: none;
+    border: 1px solid #F2F2F2;
+    border-left: none;
+    border-right: none;
     font-size: 18px;
     text-align: center;
     height: 50px;
+    width: 250px;
+    padding: 0 15px;
+    border-radius: 0;
+    outline: none;
+}
+
+.information form input::placeholder {
+    font-weight: bold;
+    color: black;
 }
 
 .information form p {
@@ -148,21 +170,30 @@ header img {
     font-size: 18px;
     background-color: #0065FC;
     padding: 15px 16px 15px 16px;
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0px 15px 15px 0px;
+    margin: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #0065FC;
+    box-sizing: border-box;
 }
 
 .information h2 {
     font-size: 18px;
     margin: 0;
-    padding-top: 20px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.filters {
     display: flex;
     align-items: center;
     gap: 20px;
-    padding-top: 50px;
     padding-bottom: 30px;
 }
 
-.information button {
+.filters button {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -176,7 +207,7 @@ header img {
     border: 2px solid #D9D9D9;
 }
 
-.information button:hover {
+.filters button:hover {
     background-color: #deebff;
 }
 
@@ -576,13 +607,17 @@ footer ul li b {
     }
 
     .information h2 {
+        padding-bottom: 20px;
+    }
+
+    .filters {
         flex-direction: column;
         align-items: flex-start;
         gap: 15px;
         padding-bottom: 20px;
     }
 
-    .information button {
+    .filters button {
         width: 100%;
         margin-bottom: 10px;
     }
