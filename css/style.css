@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 .main-container {
@@ -435,10 +436,6 @@ footer ul li b {
         padding: 0 20px;
     }
 
-    header ul {
-        align-items: right;
-    }
-
     .hebergements-and-populaires {
         flex-direction: column;
         gap: 50px;
@@ -599,9 +596,7 @@ footer ul li b {
 
     /* Information section mobile */
     .information {
-        width: calc(100% + 40px);
-        margin-left: -20px;
-        margin-right: -20px;
+        width: 100%;
         padding: 0 20px;
         box-sizing: border-box;
     }
